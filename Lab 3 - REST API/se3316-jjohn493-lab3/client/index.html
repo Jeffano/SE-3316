@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="sections" id="user-actions">
+        <h1 class="section-title">SUPERHEROES LIST</h1>
+
+        <div class="superhero-info">
+
+            <h1 class="sub-headings">
+                <label>Search Superheros By ID</label>
+            </h1>
+
+            <div class = "mini-section">
+                <label>Enter ID:</label>
+                <input class='input-boxes' type="text" id="id">
+            </div>
+
+            <div class = "mini-section">
+                <label>Find Superhero: </label>
+                <button id="find-superhero">ENTER</button>
+            </div>
+
+            <div class = "mini-section">
+                <label>Find Powers: </label>
+                <button id="find-powers">ENTER</button>
+            </div>
+
+            <div class = "mini-section">
+                <label>Find All Publisher: </label>
+  
+                <button id="find-publishers">ENTER</button>
+            </div>
+
+            <div class="output-message"> 
+                <label id="id-confirmation"></label>
+            </div>
+        </div>
+
+        <div class="superhero-matches">
+
+            <h1 class="sub-headings">
+                <label>Find Matches</label>
+            </h1>
+
+            <div class="mini-section-2">
+                <label>Find Matches:</label>
+                <select id="match-dropdown">
+                    <option value="-">-</option>
+                    <option value="name">Name</option>
+                    <option value="Gender">Gender</option>
+                    <option value="Eye color">Eye color</option>
+                    <option value="Race">Race</option>
+                    <option value="Hair color">Hair color</option>
+                    <option value="Height">Height</option>
+                    <option value="Publisher">Publisher</option>
+                    <option value="Skin color">Skin color</option>
+                    <option value="Alignment">Alignment</option>
+                    <option value="Weight">Weight</option>
+                </select>
+    
+                <label> Enter Pattern:</label>
+                <input class='input-boxes' type="text" id="pattern">
+    
+                <label>Enter Count:</label>
+                <input class='input-boxes' type="text" id="count">
+
+            </div>
+
+            <div class="mini-section-2">
+                <button id="find-matches">ENTER MATCH</button>
+            </div>
+            
+            <div class="output-message"> 
+                <label id="matches-confirmation"></label>
+            </div>
+        </div>
+
+        <div class="superhero-list">
+
+            <h1 class="sub-headings">
+                <label>Manage Lists</label>
+            </h1>
+
+            <div class="mini-section-3">
+                <label>Enter List Name:</label>
+                <input class='input-boxes' type="text" id="list-name">
+                <button id="create-list">CREATE</button>
+                <button id="delete-list">DELETE</button>
+                <button id="refresh-list">REFRESH</button>
+                <div id="list-message" class="output-message"> </div>
+
+            </div>
+            <div  class="mini-section-3">
+                <label>Enter Superhero IDs:</label>
+                <input class='input-boxes' type="text" id="superhero-id-list">
+                <label> for List: </label>
+                <select id="list-dropdowns-ids">
+
+                </select>
+                <button id="add-superhero">ADD</button>
+            </div>
+            
+            <div  class="mini-section-3">
+                <label>Show List with Superhero IDs:</label>
+                <select id="list-dropdowns-show-ids">
+
+                </select>
+                <button id="show-ids">ENTER</button>
+            </div>
+
+            <div class="mini-section-3">
+                <label>Show List with Superhero Information:</label>
+                <select id="list-dropdowns-show-information">
+                </select>
+                <button id="show-superheros">ENTER</button>
+            </div>
+
+            <div  class="mini-section-3">
+                <label>Sort List Information:</label>
+                <select id="list-dropdowns-sort">
+                </select>
+                <label> by:</label>
+                <select id="sort-options-dropdown">
+                    <option value="-">-</option>
+                    <option value="Name">Name</option>
+                    <option value="Race">Race</option>
+                    <option value="Publisher">Publisher</option>
+                    <option value="Power">Power</option>
+                </select>
+                <button id="sort-information">SORT</button>
+            </div>
+
+            <div class="output-message"> 
+                <label id="list-confirmation-message"></label>
+            </div>
+        </div>
+
+        <div class="superhero-search">
+            
+            <h1 class="sub-headings">
+                <label>Search & Sort Superhero Information With Powers</label>
+            </h1>
+
+            <div class="mini-section-2">
+                <label>Search:</label>
+                <select id="search-options-dropdown">
+                    <option value="-">-</option>
+                    <option value="Name">Name</option>
+                    <option value="Race">Race</option>
+                    <option value="Publisher">Publisher</option>
+                    <option value="Power">Power</option>
+                </select>
+                <label> : </label>
+                <input class='input-boxes' type="text" id="search-item">
+                <button id="search-info">SEARCH</button>
+                
+            </div>
+            <div class="mini-section-2">
+                <label>Sort By:</label>
+                <select id="search-sort-options-dropdown">
+                    <option value="-">-</option>
+                    <option value="Name">Name</option>
+                    <option value="Race">Race</option>
+                    <option value="Publisher">Publisher</option>
+                    <option value="Power">Power</option>
+                </select>
+                <button id="sort-superheroes">SORT</button>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class = "sections" id="output">
+        <h1 class="section-title">RESULT</h1>
+
+        <div class="display-box" id="display-box"> </div>
+    </div>
+</body>
+
+</html>
