@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SE 3316 Lab 1</title>
+    <meta name="description" content="Displaying 20 Countries">
+    <meta name="author" content="Jeffano John">
+    <link rel="stylesheet" href="countriesStyling.css">
+    <script src="countrySearch.js"></script>
+</head>
+
+<body>
+    <h1 class="page-title">SE 3316 Lab 1 - 20 Countries</h1>
+
+    <div class="search-country">
+        <label for="country-input"> Search Country: </label>
+        <input type="text" id="country-input" maxlength="20">
+    </div>
+
+    <div class="search-currency">
+        <label for="currency-input"> Search Currency: </label>
+        <input type="text" id="currency-input">
+    </div>
+
+    <div id="error-message" class="error-message"></div>
+
+    <div id="search-results" class="search-results"></div>
+
+    <div class="countries">
+        <div class="country-card" id="Belize">
+            <img class="flag-image" src="./images/bz.png" alt="Belize Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Belize" target="_blank">Belize</a></p>
+            <p class="currency"> Currency: Belizean Dollar (BZD)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Belize</li>
+                    <li>Cayo</li>
+                    <li>Corozal</li>
+                    <li>Orange Walk</li>
+                    <li>Stann Creek</li>
+                    <li>Toledo</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="country-card" id="Guatemala">
+            <img class="flag-image" src="./images/gt.png" alt="Guatemala Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Guatemala" target="_blank">Guatemala</a></p>
+            <p class="currency"> Currency: Quetzal (GTQ)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Alta Verapaz</li>
+                    <li>Baja Verapaz</li>
+                    <li>Chimaltenango</li>
+                    <li>Chiquimula</li>
+                    <li>El Progreso</li>
+                    <li>Escuintla</li>
+                    <li>Guatemala</li>
+                    <li>Huehuetenango</li>
+                    <li>Izabal</li>
+                    <li>Jalapa</li>
+                    <li>Jutiapa</li>
+                    <li>Peten</li>
+                    <li>Quetzaltenango</li>
+                    <li>Quiche</li>
+                    <li>Retalhuleu</li>
+                    <li>Sacatepequez</li>
+                    <li>San Marcos</li>
+                    <li>Santa Rosa</li>
+                    <li>Solola</li>
+                    <li>Suchitepequez</li>
+                    <li>Totonicapan</li>
+                    <li>Zacapa</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Mongolia">
+            <img class="flag-image" src="./images/mn.png" alt="Mongolia Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Mongolia" target="_blank">Mongolia</a></p>
+            <p class="currency"> Currency: Tugrik (MNT)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Bayan-Olgiy</li>
+                    <li>Darhan uul</li>
+                    <li>Dornod</li>
+                    <li>Dornogovi</li>
+                    <li>Govi-Altay</li>
+                    <li>Hovd</li>
+                    <li>Orhon</li>
+                    <li>Ovorhangay</li>
+                    <li>Selenge</li>
+                    <li>Tov</li>
+                    <li>Ulaanbaatar</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Jordan">
+            <img class="flag-image" src="./images/jo.png" alt="Jordan Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Jordan" target="_blank">Jordan</a></p>
+            <p class="currency"> Currency: Jordanian Dinar (JOD)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>'Ajlun</li>
+                    <li>Al 'Aqabah</li>
+                    <li>Al 'Asimah</li>
+                    <li>Al Balqa'</li>
+                    <li>Al Karak</li>
+                    <li>Al Mafraq</li>
+                    <li>At Tafilah</li>
+                    <li>Az Zarqa'</li>
+                    <li>Irbid</li>
+                    <li>Jarash</li>
+                    <li>Ma'an</li>
+                    <li>Madaba</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Luxembourg">
+            <img class="flag-image" src="./images/lu.png" alt="Luxembourg Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Luxembourg" target="_blank">Luxembourg</a></p>
+            <p class="currency"> Currency: Euros (EUR)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Capellen</li>
+                    <li>Clervaux</li>
+                    <li>Diekirch</li>
+                    <li>Echternach</li>
+                    <li>Esch-sur-Alzette</li>
+                    <li>Grevenmacher</li>
+                    <li>Luxembourg</li>
+                    <li>Mersch</li>
+                    <li>Redange</li>
+                    <li>Remich</li>
+                    <li>Vianden</li>
+                    <li>Wiltz</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Benin">
+            <img class="flag-image" src="./images/bj.png" alt="Benin Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Benin" target="_blank">Benin</a></p>
+            <p class="currency"> Currency: CFA Franc BCEAO (XOF)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Atacora</li>
+                    <li>Atlantique</li>
+                    <li>Borgou</li>
+                    <li>Collines</li>
+                    <li>Donga</li>
+                    <li>Littoral</li>
+                    <li>Mono</li>
+                    <li>Oueme</li>
+                    <li>Plateau</li>
+                    <li>Zou</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Finland">
+            <img class="flag-image" src="./images/fi.png" alt="Finland Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Finland" target="_blank">Finland</a></p>
+            <p class="currency"> Currency: Euros (EUR)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Capellen</li>
+                    <li>Clervaux</li>
+                    <li>Diekirch</li>
+                    <li>Echternach</li>
+                    <li>Esch-sur-Alzette</li>
+                    <li>Grevenmacher</li>
+                    <li>Luxembourg</li>
+                    <li>Mersch</li>
+                    <li>Redange</li>
+                    <li>Remich</li>
+                    <li>Vianden</li>
+                    <li>Wiltz</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Burundi">
+            <img class="flag-image" src="./images/bi.png" alt="Burundi Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Burundi" target="_blank">Burundi</a></p>
+            <p class="currency"> Currency: Burundi Franc (BIF)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Bujumbura Mairie</li>
+                    <li>Cibitoke</li>
+                    <li>Gitega</li>
+                    <li>Karuzi</li>
+                    <li>Kirundo</li>
+                    <li>Mwaro</li>
+                    <li>Ngozi</li>
+                    <li>Rumonge</li>
+                    <li>Rutana</li>
+                    <li>Ruyigi</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Afghanistan">
+            <img class="flag-image" src="./images/af.png" alt="Afghanistan Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Afghanistan" target="_blank">Afghanistan</a>
+            </p>
+            <p class="currency"> Currency: Afghani (AFN)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Badakhshan</li>
+                    <li>Badghis</li>
+                    <li>Baghlan</li>
+                    <li>Balkh</li>
+                    <li>Bamyan</li>
+                    <li>Daykundi</li>
+                    <li>Farah</li>
+                    <li>Faryab</li>
+                    <li>Ghazni</li>
+                    <li>Ghor</li>
+                    <li>Helmand</li>
+                    <li>Herat</li>
+                    <li>Jowzjan</li>
+                    <li>Kabul</li>
+                    <li>Kandahar</li>
+                    <li>Kapisa</li>
+                    <li>Khost</li>
+                    <li>Kunduz</li>
+                    <li>Laghman</li>
+                    <li>Logar</li>
+                    <li>Nangarhar</li>
+                    <li>Nimroz</li>
+                    <li>Paktiya</li>
+                    <li>Parwan</li>
+                    <li>Sar-e Pul</li>
+                    <li>Takhar</li>
+                    <li>Uruzgan</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Papua-New-Guinea">
+            <img class="flag-image" src="./images/pg.png" alt="Papua New Guinea Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Papua_New_Guinea" target="_blank">Papua New
+                    Guinea</a></p>
+            <p class="currency"> Currency: Kina (PGK)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Bougainville</li>
+                    <li>Central</li>
+                    <li>Chimbu</li>
+                    <li>East New Britain</li>
+                    <li>Eastern Highlands</li>
+                    <li>East Sepik</li>
+                    <li>Madang</li>
+                    <li>Manus</li>
+                    <li>Milne Bay</li>
+                    <li>Morobe</li>
+                    <li>National Capital District (Port Moresby)</li>
+                    <li>Southern Highlands</li>
+                    <li>West New Britain</li>
+                    <li>West Sepik</li>
+                    <li>Western</li>
+                    <li>Western Highlands</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Qatar">
+            <img class="flag-image" src="./images/qa.png" alt="Qatar Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Qatar" target="_blank">Qatar</a></p>
+            <p class="currency"> Currency: Riyal (QAR)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Ad Dawhah</li>
+                    <li>Al Khawr wa adh Dhakhirah</li>
+                    <li>Al Wakrah</li>
+                    <li>Ar Rayyan</li>
+                    <li>Ash Shamal</li>
+                    <li>Az Za'ayin</li>
+                    <li>Umm Salal</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Chad">
+            <img class="flag-image" src="./images/td.png" alt="Chad Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Chad" target="_blank">Chad</a></p>
+            <p class="currency"> Currency: CFA Franc BCEAO (XOF)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Bahr el Ghazal</li>
+                    <li>Chari-Baguirmi</li>
+                    <li>Guera</li>
+                    <li>Logone-Occidental</li>
+                    <li>Mayo-Kebbi-Est</li>
+                    <li>Ouaddai</li>
+                    <li>Ville de Ndjamena</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="El-Salvador">
+            <img class="flag-image" src="./images/sv.png" alt="El Salvador Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/El_Salvador" target="_blank">El Salvador</a>
+            </p>
+            <p class="currency"> Currency: Salvadoran Colon (SVC)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Ahuachapan</li>
+                    <li>Cabanas</li>
+                    <li>Chalatenango</li>
+                    <li>Cuscatlan</li>
+                    <li>La Libertad</li>
+                    <li>La Paz</li>
+                    <li>La Union</li>
+                    <li>Morazan</li>
+                    <li>San Miguel</li>
+                    <li>San Salvador</li>
+                    <li>San Vicente</li>
+                    <li>Santa Ana</li>
+                    <li>Sonsonate</li>
+                    <li>Usulutan</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Seychelles">
+            <img class="flag-image" src="./images/sc.png" alt="Seychelles Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Seychelles" target="_blank">Seychelles</a></p>
+            <p class="currency"> Currency: Rupee (SCR)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Anse Boileau</li>
+                    <li>Anse Royale</li>
+                    <li>Anse aux Pins</li>
+                    <li>Baie Lazare</li>
+                    <li>Baie Sainte Anne</li>
+                    <li>Beau Vallon</li>
+                    <li>Bel Ombre</li>
+                    <li>Cascade</li>
+                    <li>English River</li>
+                    <li>Grand Anse Mahe</li>
+                    <li>Grand Anse Praslin</li>
+                    <li>La Digue</li>
+                    <li>Pointe Larue</li>
+                    <li>Takamaka</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Italy">
+            <img class="flag-image" src="./images/it.png" alt="Italy Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Italy" target="_blank">Italy</a></p>
+            <p class="currency"> Currency: Euros (EUR)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Abruzzo</li>
+                    <li>Basilicata</li>
+                    <li>Calabria</li>
+                    <li>Campania</li>
+                    <li>Emilia-Romagna</li>
+                    <li>Friuli-Venezia Giulia</li>
+                    <li>Lazio</li>
+                    <li>Liguria</li>
+                    <li>Lombardia</li>
+                    <li>Marche</li>
+                    <li>Molise</li>
+                    <li>Piemonte</li>
+                    <li>Puglia</li>
+                    <li>Sardegna</li>
+                    <li>Sicilia</li>
+                    <li>Toscana</li>
+                    <li>Trentino-Alto Adige</li>
+                    <li>Umbria</li>
+                    <li>Valle d'Aosta</li>
+                    <li>Veneto</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Cameroon">
+            <img class="flag-image" src="./images/cm.png" alt="Cameroon Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Cameroon" target="_blank">Cameroon</a></p>
+            <p class="currency"> Currency: CFA Franc BCEAO (XOF)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Adamaoua</li>
+                    <li>Centre</li>
+                    <li>Est</li>
+                    <li>Extreme-Nord</li>
+                    <li>Littoral</li>
+                    <li>Nord</li>
+                    <li>Nord-Ouest</li>
+                    <li>Ouest</li>
+                    <li>Sud</li>
+                    <li>Sud-Ouest</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Ghana">
+            <img class="flag-image" src="./images/gh.png" alt="Ghana Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Ghana" target="_blank">Ghana</a></p>
+            <p class="currency"> Currency: Ghana Cedi (GHS)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Ahafo</li>
+                    <li>Ashanti</li>
+                    <li>Bono</li>
+                    <li>Bono East</li>
+                    <li>Central</li>
+                    <li>Eastern</li>
+                    <li>Greater Accra</li>
+                    <li>Northern</li>
+                    <li>Upper East</li>
+                    <li>Upper West</li>
+                    <li>Volta</li>
+                    <li>Western</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Nicaragua">
+            <img class="flag-image" src="./images/ni.png" alt="Nicaragua Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Nicaragua" target="_blank">Nicaragua</a></p>
+            <p class="currency"> Currency: Cordoba Oro (NIO)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Boaco</li>
+                    <li>Carazo</li>
+                    <li>Chinandega</li>
+                    <li>Chontales</li>
+                    <li>Costa Caribe Norte</li>
+                    <li>Costa Caribe Sur</li>
+                    <li>Esteli</li>
+                    <li>Granada</li>
+                    <li>Jinotega</li>
+                    <li>Leon</li>
+                    <li>Madriz</li>
+                    <li>Managua</li>
+                    <li>Masaya</li>
+                    <li>Matagalpa</li>
+                    <li>Nueva Segovia</li>
+                    <li>Rio San Juan</li>
+                    <li>Rivas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Zimbabwe">
+            <img class="flag-image" src="./images/zw.png" alt="Zimbabwe Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Zimbabwe" target="_blank">Zimbabwe</a></p>
+            <p class="currency"> Currency: Zimbabwean Dollar (ZWD)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>Bulawayo</li>
+                    <li>Harare</li>
+                    <li>Manicaland</li>
+                    <li>Mashonaland Central</li>
+                    <li>Mashonaland East</li>
+                    <li>Mashonaland West</li>
+                    <li>Masvingo</li>
+                    <li>Matabeleland North</li>
+                    <li>Matabeleland South</li>
+                    <li>Midlands</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-card" id="Saudi-arabia">
+            <img class="flag-image" src="./images/sa.png" alt="Saudi Arabia Flag">
+            <p class="card-title"><a href="https://en.wikipedia.org/wiki/Saudi_Arabia" target="_blank">Saudi Arabia</a>
+            </p>
+            <p class="currency"> Currency: Riyal (SAR)</p>
+
+            <div class="regions-card">
+                <p class="region-title"> List of Regions</p>
+                <ul class="region-list">
+                    <li>'Asir</li>
+                    <li>Al Bahah</li>
+                    <li>Al Hudud ash Shamaliyah</li>
+                    <li>Al Jawf</li>
+                    <li>Al Madinah al Munawwarah</li>
+                    <li>Al Qasim</li>
+                    <li>Ar Riyad</li>
+                    <li>Ash Sharqiyah</li>
+                    <li>Ha'il</li>
+                    <li>Jazan</li>
+                    <li>Makkah al Mukarramah</li>
+                    <li>Najran</li>
+                    <li>Tabuk</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
