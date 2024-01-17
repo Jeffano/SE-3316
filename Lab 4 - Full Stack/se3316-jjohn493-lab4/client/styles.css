@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D8D9DA;
+    padding: 40px;
+}
+
+.input-boxes{
+    width: 200px; /* Adjust the width as needed */
+}
+
+.sections {
+    background-color: #F5F7F8;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.display-box {
+    background-color: #61677A;
+    color: #ffffff;
+    padding: 50px;
+    margin: 10px;       /* For horizontal scrolling if necessary */
+    font-family: 'Courier New', monospace; /* Sets a readable monospaced font */
+    border: 1px solid #ccc;     /* Optional border */
+    border-radius: 20px;
+    max-height: 500px; /* Set a maximum height */
+    max-width: 3000px; /* Set a maximum width */
+    overflow-y: auto; /* Add vertical scroll bars when content overflows */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    text-align: center;
+
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+input {
+    margin: 10px;
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+select{
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+.sub-headings{
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+
+.superhero-info{
+    background-color: #EDEDED;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+
+.mini-section{
+    padding: 10px;
+    text-align: center;
+}
+
+.superhero-matches{
+    background-color: #EDEDED;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.mini-section-2{
+    padding: 10px;
+    text-align: center;
+}
+
+.superhero-list{
+    background-color: #EDEDED;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.mini-section-3{
+    padding: 10px;
+    text-align:left;
+}
+
+.superhero-search{
+    background-color: #EDEDED;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.sorting-data{
+    background-color: #EDEDED;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.output-message{
+    text-align: center;
+    color: #e60000;
+    padding: 10px;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    background-color: #61677A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+

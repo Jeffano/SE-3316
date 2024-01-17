@@ -1,0 +1,39 @@
+.SignIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    background-color: lightblue;
+}
+.SignUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    background-color: lightblue;
+}
+
+.LandingPage > div {
+    margin: 10px 0;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px 15px; /* Makes the input boxes a bit larger */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ddd;
+    margin: 5px 0; /* Adds some space around each input box */
+    margin-right: 10px;
+    font-size: 16px; /* Increases the font size for better readability */
+}
+

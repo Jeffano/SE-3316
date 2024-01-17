@@ -1,0 +1,13 @@
+.Dashboard {
+    background-color: lightblue;
+    color: black;
+    padding: 50px;
+    margin: 10px;       /* For horizontal scrolling if necessary */
+    font-family: 'Courier New', monospace; /* Sets a readable monospaced font */
+    border: 1px solid #ccc;     /* Optional border */
+    border-radius: 20px;
+    max-height: 500px; /* Set a maximum height */
+    max-width: 3000px; /* Set a maximum width */
+    overflow-y: auto; /* Add vertical scroll bars when content overflows */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
